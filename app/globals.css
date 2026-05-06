@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-cream: #faf9f5;
+  --color-cream-soft: #f3f0e8;
+  --color-ink: #1a1a1a;
+  --color-ink-soft: #2b2b2b;
+  --color-accent: #c0432a;
+  --color-accent-warm: #d97757;
+
+  --font-display: var(--font-display, "Fraunces", "Times New Roman", serif);
+  --font-sans: var(--font-sans, "Inter", system-ui, -apple-system, sans-serif);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss01", "ss02", "cv11";
+}
+
+::selection {
+  background-color: var(--color-accent);
+  color: var(--color-cream);
+}
+
+.font-display {
+  font-optical-sizing: auto;
+  font-variation-settings: "SOFT" 30, "WONK" 0;
 }

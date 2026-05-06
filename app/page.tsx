@@ -1,65 +1,64 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="min-h-screen bg-cream text-ink">
+      <section className="mx-auto max-w-6xl px-6 pt-32 pb-24 md:px-10 lg:px-16">
+        <p className="font-sans text-xs uppercase tracking-[0.18em] text-ink/60 mb-8">
+          Im &nbsp;·&nbsp; Isaac Mackenzie / Frontend Developer &nbsp;·&nbsp;
+          2026
+        </p>
+
+        <p className="font-sans text-xs uppercase tracking-[0.18em] text-accent mb-6">
+          01 — Index
+        </p>
+
+        <h1 className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-ink mb-10">
+          Frontend developer
+          <br />
+          <span className="italic text-ink/80">who ships</span>
+          <span className="text-accent">.</span>
+        </h1>
+
+        <p className="font-sans text-lg md:text-xl text-ink/75 max-w-2xl leading-relaxed mb-12">
+          I&apos;m Isaac Mackenzie — a frontend developer building production
+          React, Next.js, and TypeScript applications. Founder of{" "}
+          <span className="font-medium text-ink">IMDEV</span>, where I shipped{" "}
+          <span className="font-medium text-ink">InkPlan</span>, a live
+          full-stack AI SaaS, owning the full design-to-deployment pipeline.
+        </p>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl border-t border-ink/15 pt-8">
+          <div>
+            <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
+              Currently
+            </p>
+            <p className="font-sans text-sm text-ink">
+              IMDEV · Frontend Simplified
+            </p>
+          </div>
+          <div>
+            <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
+              Stack
+            </p>
+            <p className="font-sans text-sm text-ink">
+              React · Next · TS · Supabase
+            </p>
+          </div>
+          <div>
+            <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
+              Background
+            </p>
+            <p className="font-sans text-sm text-ink">15+ yrs visual craft</p>
+          </div>
+          <div>
+            <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
+              Available
+            </p>
+            <p className="font-sans text-sm text-ink">
+              Mon–Wed · Remote · GMT−10
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }
