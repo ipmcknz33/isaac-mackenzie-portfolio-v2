@@ -65,8 +65,8 @@ const contacts: {
   },
   {
     label: "Phone",
-    value: "480-369-5423",
-    href: "tel:+14803695423",
+    value: "808-761-6910",
+    href: "tel:+18087616910",
   },
   {
     label: "LinkedIn",
@@ -175,7 +175,7 @@ export default function Home() {
               <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
                 Background
               </p>
-              <p className="font-sans text-sm text-ink">15+ yrs visual craft</p>
+              <p className="font-sans text-sm text-ink">17+ yrs visual craft</p>
             </div>
             <div>
               <p className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
@@ -279,10 +279,11 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-10">
             <div className="md:col-span-7 space-y-6 font-sans text-base md:text-lg text-ink/75 leading-relaxed">
               <p>
-                Before I wrote a line of production code, I spent fifteen years
-                tattooing - composing line, weight, and balance on something
-                that has to read at a glance and hold up for decades. That eye
-                for permanence shapes the way I build software.
+                Before I wrote a line of production code, I spent seventeen
+                years tattooing - composing line, weight, and balance on
+                something that has to read at a glance and hold up for
+                decades. That eye for permanence shapes the way I build
+                software.
               </p>
               <p>
                 I run my tattoo studio Thursday through Sunday at TNT Tattoo in
@@ -312,7 +313,7 @@ export default function Home() {
                   <dt className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
                     Years tattooing
                   </dt>
-                  <dd className="font-sans text-sm text-ink">15+</dd>
+                  <dd className="font-sans text-sm text-ink">17+</dd>
                 </div>
                 <div>
                   <dt className="font-sans text-xs uppercase tracking-[0.14em] text-ink/50 mb-2">
