@@ -57,7 +57,7 @@ export default function ContactModal({ open, onClose }: Props) {
           </button>
           <a
             className="modal-cta-secondary"
-            href="/resume.pdf"
+            href="/assets/Isaac_Mackenzie_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -19,13 +19,13 @@ interface PdfDoc {
 const SKILLS = ["React", "TypeScript", "Next.js", "Firebase", "Stripe"];
 
 const RESUME_DOC: PdfDoc = {
-  src: "/resume.pdf",
+  src: "/assets/Isaac_Mackenzie_Resume.pdf",
   title: "Resume — Isaac Mackenzie",
   download: "Isaac_Mackenzie_Resume.pdf",
 };
 
 const CERT_DOC: PdfDoc = {
-  src: "/certificate.pdf",
+  src: "/assets/Isaac's%20Certificate.pdf",
   title: "Frontend Simplified · Full-Stack Engineering",
   download: "Isaac_Mackenzie_Frontend_Simplified_Certificate.pdf",
 };
