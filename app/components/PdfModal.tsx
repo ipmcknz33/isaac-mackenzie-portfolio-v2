@@ -17,6 +17,8 @@ export default function PdfModal({
   src,
   downloadName,
 }: Props) {
+  if (!src) return null;
+
   return (
     <Modal open={open} onClose={onClose} title={title} size="wide">
       <div className="pdf-frame">
@@ -24,6 +26,8 @@ export default function PdfModal({
           src={`${src}#view=FitH`}
           title={title}
           aria-label={title}
+          width="100%"
+          height="100%"
         />
       </div>
       <div className="pdf-actions">
