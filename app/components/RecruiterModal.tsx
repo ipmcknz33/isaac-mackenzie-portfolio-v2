@@ -58,8 +58,11 @@ export default function RecruiterModal({ open, onClose }: Props) {
             <b>Honolulu, HI · GMT-10</b>
           </div>
           <div>
-            <span>Availability</span>
-            <b>Open to FT &amp; contract</b>
+            <span>Open to</span>
+            <b>
+              Part-time frontend contracts (Mon–Wed, remote, HST). Production
+              React/Next.js work, paid trials, and IMDEV studio engagements.
+            </b>
           </div>
         </div>
 
