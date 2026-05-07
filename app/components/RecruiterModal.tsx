@@ -39,8 +39,8 @@ export default function RecruiterModal({ open, onClose }: Props) {
         <p className="modal-bio">
           I&apos;m a frontend developer based in Honolulu, focused on shipping
           production React, Next.js, and TypeScript applications. I founded IMDEV
-          in late 2025 and shipped InkPlan — a live AI-powered SaaS — owning the
-          full design-to-deployment pipeline.
+          in late 2025 and shipped InkPlan — a live tattoo apprenticeship prep
+          platform — owning the full design-to-deployment pipeline.
         </p>
 
         <div className="modal-skills">

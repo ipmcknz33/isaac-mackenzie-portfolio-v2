@@ -28,7 +28,7 @@ const jetBrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: "Isaac Mackenzie — Frontend Developer & Founder of IMDEV",
   description:
-    "Frontend developer and founder of IMDEV. I architect and ship production React, Next.js, and TypeScript applications — including InkPlan, a live full-stack AI SaaS.",
+    "Frontend developer and founder of IMDEV. I architect and ship production React, Next.js, and TypeScript applications — including InkPlan, a live tattoo apprenticeship prep platform.",
   openGraph: {
     title: "Isaac Mackenzie — Frontend Developer & Founder of IMDEV",
     description:

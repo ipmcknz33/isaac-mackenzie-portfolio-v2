@@ -31,6 +31,7 @@ interface IndexItem {
   num: string;
   titlePrefix: string;
   titleEm: string;
+  titleSuffix?: string;
   meta: string;
   tags: string[];
 }
@@ -62,11 +63,11 @@ const projects: Project[] = [
     pillRight: "Live in production",
     pillRightLive: true,
     stack: ["React", "TypeScript", "Firebase", "Stripe", "AI"],
-    titlePrefix: "InkPlan — ",
-    titleEm: "AI-powered SaaS",
-    titleSuffix: " for tattoo studios",
+    titlePrefix: "InkPlan — A live tattoo ",
+    titleEm: "apprenticeship prep",
+    titleSuffix: " platform",
     blurb:
-      "A subscription dashboard, onboarding flows, and AI-integrated interfaces — owned end-to-end from design to deployment under IMDEV.",
+      "Owning the full design-to-deployment pipeline. Subscription-based, with AI-guided coaching, style-specific drills, and portfolio tools — running in production at inkplan.net.",
     yearMeta: "2025 — 2026 · IMDEV",
     links: [
       { label: "Live demo ↗", href: "https://inkplan.net/" },
@@ -171,7 +172,8 @@ const indexItems: IndexItem[] = [
   {
     num: "01",
     titlePrefix: "InkPlan — ",
-    titleEm: "AI-powered SaaS",
+    titleEm: "Apprenticeship-ready",
+    titleSuffix: " skills for aspiring tattoo artists",
     meta: "2025–26 · Founder, lead dev",
     tags: ["React", "Firebase", "Stripe", "AI"],
   },
@@ -244,7 +246,7 @@ const timeline: TimelineRow[] = [
     rolePrefix: "Founder & Frontend ",
     roleEm: "Developer",
     company: "IMDEV · Remote",
-    desc: "Started building InkPlan in late 2025; first GitHub commits early 2026; LLC formally registered April 1, 2026. Architected and shipped InkPlan as a live AI-powered SaaS, plus imdev.studio with Next.js, Tailwind, and Framer Motion.",
+    desc: "Started building InkPlan in late 2025; first GitHub commits early 2026; LLC formally registered April 1, 2026. Architected and shipped InkPlan as a live tattoo apprenticeship prep platform, plus imdev.studio with Next.js, Tailwind, and Framer Motion.",
     tag: "Founder",
   },
   {
@@ -440,8 +442,9 @@ export default function Home() {
               frontend developer building production React, Next.js, and
               TypeScript applications. Founder of{" "}
               <span className="accent">IMDEV</span>, where I shipped{" "}
-              <span className="accent">InkPlan</span>, a live AI-powered SaaS,
-              owning the full design-to-deployment pipeline.
+              <span className="accent">InkPlan</span>, a live tattoo
+              apprenticeship prep platform, owning the full design-to-deployment
+              pipeline.
             </p>
             <div className="hero-aside">
               <div className="row">
@@ -570,6 +573,7 @@ export default function Home() {
                 <h3 className="work-title">
                   {item.titlePrefix}
                   <em>{item.titleEm}</em>
+                  {item.titleSuffix}
                 </h3>
                 <span className="work-meta">{item.meta}</span>
                 <div className="work-tags">
