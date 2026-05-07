@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(echo \"exit: $?\")",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Read(//c/Users/imckn/OneDrive/Desktop/I.M. E-Portfolio/assets/**)",
+      "Bash(cp \"C:\\\\Users\\\\imckn\\\\OneDrive\\\\Desktop\\\\I.M. E-Portfolio\\\\assets\\\\Isaac's Certificate.pdf\" public/certificate.pdf)",
+      "Bash(echo \"tsc exit: $?\")",
+      "Bash(taskkill *)",
+      "PowerShell(taskkill *)",
+      "PowerShell(Get-Content C:\\\\Users\\\\imckn\\\\package.json; \"\"; \"--- node_modules contents ---\"; Get-ChildItem C:\\\\Users\\\\imckn\\\\node_modules -Name)"
+    ]
+  }
+}
