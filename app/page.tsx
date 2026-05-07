@@ -461,7 +461,7 @@ export default function Home() {
               </div>
               <div className="row">
                 <span>Open to</span>
-                <b>FT &amp; contract roles</b>
+                <b>Part-time · Mon–Wed · Remote · Open to contract</b>
               </div>
             </div>
           </div>
