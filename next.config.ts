@@ -5,12 +5,11 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/assets/isaac-resume.pdf",
-        headers: [{ key: "Content-Disposition", value: "inline" }],
-      },
-      {
-        source: "/assets/isaac-certificate.pdf",
-        headers: [{ key: "Content-Disposition", value: "inline" }],
+        source: "/assets/:path*.pdf",
+        headers: [
+          { key: "Content-Disposition", value: "inline" },
+          { key: "Content-Type", value: "application/pdf" },
+        ],
       },
     ];
   },
