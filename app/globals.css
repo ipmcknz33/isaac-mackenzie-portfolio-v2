@@ -823,15 +823,6 @@ body::before {
 .art-imd {
   background: linear-gradient(135deg, #0e0e0f 0%, #1c1c20 100%);
 }
-.art-imd .tag {
-  position: absolute;
-  left: 36px;
-  top: 36px;
-  font-family: var(--mono);
-  font-size: 11px;
-  letter-spacing: 0.4em;
-  color: var(--accent);
-}
 .art-imd .display {
   position: absolute;
   left: 36px;

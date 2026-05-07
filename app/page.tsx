@@ -348,7 +348,6 @@ function ProjectArtLayer({ art }: { art: ProjectArt }) {
       return (
         <div className="art art-imd">
           <div className="ribbon"></div>
-          <div className="tag">IMDEV.STUDIO</div>
           <div className="display">
             Studio
             <br />
