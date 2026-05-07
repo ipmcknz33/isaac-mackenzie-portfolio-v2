@@ -840,7 +840,7 @@ body::before {
   font-style: italic;
   font-weight: 300;
   font-size: clamp(56px, 7vw, 108px);
-  line-height: 0.9;
+  line-height: 1;
   letter-spacing: -0.04em;
   color: rgba(242, 239, 230, 0.16);
   max-width: 65%;
@@ -1136,7 +1136,7 @@ body::before {
   font-family: var(--serif);
   font-weight: var(--serif-weight);
   font-size: clamp(64px, 11vw, 180px);
-  line-height: 0.9;
+  line-height: 1.02;
   letter-spacing: -0.04em;
   margin: 0;
   font-variation-settings: "opsz" 144, "SOFT" 60;
