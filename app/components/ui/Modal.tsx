@@ -14,12 +14,19 @@ interface ModalProps {
   onClose: () => void;
   title: string;
   children: ReactNode;
+  size?: "default" | "wide";
 }
 
 const FOCUSABLE_SELECTOR =
   'a[href], button:not([disabled]), textarea:not([disabled]), input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-export default function Modal({ open, onClose, title, children }: ModalProps) {
+export default function Modal({
+  open,
+  onClose,
+  title,
+  children,
+  size = "default",
+}: ModalProps) {
   const dialogRef = useRef<HTMLDivElement>(null);
   const previousFocus = useRef<Element | null>(null);
   const titleId = useId();
@@ -101,7 +108,7 @@ export default function Modal({ open, onClose, title, children }: ModalProps) {
         aria-modal="true"
         aria-labelledby={titleId}
         tabIndex={-1}
-        className="modal-dialog"
+        className={`modal-dialog${size === "wide" ? " modal-dialog--wide" : ""}`}
         onClick={(event) => event.stopPropagation()}
       >
         <div className="modal-header">
