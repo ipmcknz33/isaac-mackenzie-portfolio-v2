@@ -232,7 +232,7 @@ body::before {
   font-family: var(--serif);
   font-weight: var(--serif-weight);
   font-size: clamp(56px, 9.5vw, 156px);
-  line-height: 0.92;
+  line-height: 1.02;
   letter-spacing: -0.035em;
   margin: 0;
   font-variation-settings: "opsz" 144, "SOFT" 30;
