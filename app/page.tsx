@@ -388,7 +388,7 @@ export default function Home() {
         <div className="wrap nav-inner">
           <a href="#top" className="brand">
             <span className="mark">
-              <SpinningPrism size={24} />
+              <SpinningPrism size={36} />
             </span>
             <span>
               Isaac Mackenzie / <b>Frontend Developer · 2026</b>
