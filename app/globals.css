@@ -16,7 +16,7 @@
   --sans: var(--font-sans, "Inter", system-ui, sans-serif);
   --mono: var(--font-mono, "JetBrains Mono", ui-monospace, monospace);
   --max: 1320px;
-  --pad: 48px;
+  --pad: 64px;
   --serif-weight: 300;
 }
 
@@ -1674,7 +1674,7 @@ footer a:hover {
 
 @media (max-width: 1000px) {
   :root {
-    --pad: 24px;
+    --pad: 36px;
   }
   .hero {
     padding: 80px 0 60px;
@@ -1733,7 +1733,7 @@ footer a:hover {
 
 @media (max-width: 640px) {
   :root {
-    --pad: 18px;
+    --pad: 24px;
   }
   body {
     font-size: 14px;
