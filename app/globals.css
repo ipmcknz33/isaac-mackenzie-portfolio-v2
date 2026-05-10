@@ -1733,7 +1733,7 @@ footer a:hover {
 
 @media (max-width: 640px) {
   :root {
-    --pad: 24px;
+    --pad: 32px;
   }
   body {
     font-size: 14px;
