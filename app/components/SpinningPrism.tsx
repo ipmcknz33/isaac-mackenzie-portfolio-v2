@@ -52,16 +52,20 @@ export default function SpinningPrism({
           position: relative;
           transform-style: preserve-3d;
           animation: prism-spin 14s infinite linear;
+          will-change: transform;
         }
 
         .face {
           position: absolute;
+          top: 0;
+          left: 0;
           width: ${faceSize}px;
           height: ${faceSize}px;
           display: flex;
           align-items: center;
           justify-content: center;
           backface-visibility: hidden;
+          -webkit-backface-visibility: hidden;
           overflow: hidden;
           border-radius: 4px;
           box-shadow: 0 4px 12px rgba(26, 26, 26, 0.08);
